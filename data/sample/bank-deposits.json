@@ -1,0 +1,80 @@
+[
+  {
+    "id": "dep_3001",
+    "date": "2026-09-04",
+    "amount": 321970,
+    "description": "Stripe payout po_1001"
+  },
+  {
+    "id": "dep_3002",
+    "date": "2026-09-06",
+    "amount": 151265,
+    "description": "Stripe payout po_1002"
+  },
+  {
+    "id": "dep_3003",
+    "date": "2026-09-08",
+    "amount": 218970,
+    "description": "Stripe payout po_1003"
+  },
+  {
+    "id": "dep_3004",
+    "date": "2026-09-10",
+    "amount": 204189,
+    "description": "Stripe payout po_1004"
+  },
+  {
+    "id": "dep_3005",
+    "date": "2026-09-12",
+    "amount": 228191,
+    "description": "Stripe payout po_1005"
+  },
+  {
+    "id": "dep_3006",
+    "date": "2026-09-14",
+    "amount": 333985,
+    "description": "Stripe payout po_1006"
+  },
+  {
+    "id": "dep_3007",
+    "date": "2026-09-16",
+    "amount": 455390,
+    "description": "Stripe payout po_1007"
+  },
+  {
+    "id": "dep_3008",
+    "date": "2026-09-18",
+    "amount": 193686,
+    "description": "Stripe payout po_1008"
+  },
+  {
+    "id": "dep_3009",
+    "date": "2026-09-20",
+    "amount": 193686,
+    "description": "Stripe payout po_1009"
+  },
+  {
+    "id": "dep_3010",
+    "date": "2026-09-22",
+    "amount": 152062,
+    "description": "Stripe payout po_1010"
+  },
+  {
+    "id": "dep_3011",
+    "date": "2026-09-24",
+    "amount": 113105,
+    "description": "Stripe payout po_1011"
+  },
+  {
+    "id": "dep_3013",
+    "date": "2026-09-28",
+    "amount": 269444,
+    "description": "Stripe payout po_1013"
+  },
+  {
+    "id": "dep_3014",
+    "date": "2026-09-30",
+    "amount": 197841,
+    "description": "Stripe payout po_1014"
+  }
+]

@@ -1,0 +1,51 @@
+TxnDate,DocNumber,PayoutId,Account,Debit,Credit,Description
+2026-09-03,JE-001,po_1001,Bank Clearing — Stripe Payouts,3219.70,,Stripe payout po_1001 to bank
+2026-09-03,JE-001,po_1001,Stripe Processing Fees,99.88,,Stripe processing fees
+2026-09-03,JE-001,po_1001,Sales Revenue,,3319.58,Gross sales for payout period
+2026-09-05,JE-002,po_1002,Bank Clearing — Stripe Payouts,1512.65,,Stripe payout po_1002 to bank
+2026-09-05,JE-002,po_1002,Stripe Processing Fees,50.76,,Stripe processing fees
+2026-09-05,JE-002,po_1002,Refunds (Contra Revenue),104.31,,Customer refunds
+2026-09-05,JE-002,po_1002,Sales Revenue,,1667.72,Gross sales for payout period
+2026-09-07,JE-003,po_1003,Bank Clearing — Stripe Payouts,2189.70,,Stripe payout po_1003 to bank
+2026-09-07,JE-003,po_1003,Stripe Processing Fees,69.13,,Stripe processing fees
+2026-09-07,JE-003,po_1003,Sales Revenue,,2258.83,Gross sales for payout period
+2026-09-09,JE-004,po_1004,Bank Clearing — Stripe Payouts,2041.89,,Stripe payout po_1004 to bank
+2026-09-09,JE-004,po_1004,Stripe Processing Fees,64.08,,Stripe processing fees
+2026-09-09,JE-004,po_1004,Sales Revenue,,2105.97,Gross sales for payout period
+2026-09-11,JE-005,po_1005,Bank Clearing — Stripe Payouts,2281.91,,Stripe payout po_1005 to bank
+2026-09-11,JE-005,po_1005,Stripe Processing Fees,93.79,,Stripe processing fees
+2026-09-11,JE-005,po_1005,Refunds (Contra Revenue),107.56,,Customer refunds
+2026-09-11,JE-005,po_1005,Chargebacks (Contra Revenue),120.00,,Chargebacks
+2026-09-11,JE-005,po_1005,Sales Revenue,,2603.26,Gross sales for payout period
+2026-09-13,JE-006,po_1006,Bank Clearing — Stripe Payouts,3339.85,,Stripe payout po_1006 to bank
+2026-09-13,JE-006,po_1006,Stripe Processing Fees,105.05,,Stripe processing fees
+2026-09-13,JE-006,po_1006,Sales Revenue,,3457.24,Gross sales for payout period
+2026-09-13,JE-006,po_1006,Unreconciled Difference (Suspense),12.34,,Payout short of computed net
+2026-09-15,JE-007,po_1007,Bank Clearing — Stripe Payouts,4553.90,,Stripe payout po_1007 to bank
+2026-09-15,JE-007,po_1007,Stripe Processing Fees,140.95,,Stripe processing fees
+2026-09-15,JE-007,po_1007,Sales Revenue,,4694.85,Gross sales for payout period
+2026-09-17,JE-008,po_1008,Bank Clearing — Stripe Payouts,1936.86,,Stripe payout po_1008 to bank
+2026-09-17,JE-008,po_1008,Stripe Processing Fees,62.08,,Stripe processing fees
+2026-09-17,JE-008,po_1008,Refunds (Contra Revenue),59.21,,Customer refunds
+2026-09-17,JE-008,po_1008,Sales Revenue,,2058.15,Gross sales for payout period
+2026-09-19,JE-009,po_1009,Bank Clearing — Stripe Payouts,1936.86,,Stripe payout po_1009 to bank
+2026-09-19,JE-009,po_1009,Stripe Processing Fees,62.08,,Stripe processing fees
+2026-09-19,JE-009,po_1009,Refunds (Contra Revenue),59.21,,Customer refunds
+2026-09-19,JE-009,po_1009,Sales Revenue,,2058.15,Gross sales for payout period
+2026-09-21,JE-010,po_1010,Bank Clearing — Stripe Payouts,1520.62,,Stripe payout po_1010 to bank
+2026-09-21,JE-010,po_1010,Stripe Processing Fees,47.27,,Stripe processing fees
+2026-09-21,JE-010,po_1010,Sales Revenue,,1567.89,Gross sales for payout period
+2026-09-23,JE-011,po_1011,Bank Clearing — Stripe Payouts,1131.05,,Stripe payout po_1011 to bank
+2026-09-23,JE-011,po_1011,Stripe Processing Fees,45.14,,Stripe processing fees
+2026-09-23,JE-011,po_1011,Refunds (Contra Revenue),318.39,,Customer refunds
+2026-09-23,JE-011,po_1011,Sales Revenue,,1494.58,Gross sales for payout period
+2026-09-25,JE-012,po_1012,Bank Clearing — Stripe Payouts,3093.49,,Stripe payout po_1012 to bank
+2026-09-25,JE-012,po_1012,Stripe Processing Fees,96.72,,Stripe processing fees
+2026-09-25,JE-012,po_1012,Sales Revenue,,3190.21,Gross sales for payout period
+2026-09-27,JE-013,po_1013,Bank Clearing — Stripe Payouts,2694.44,,Stripe payout po_1013 to bank
+2026-09-27,JE-013,po_1013,Stripe Processing Fees,84.49,,Stripe processing fees
+2026-09-27,JE-013,po_1013,Sales Revenue,,2778.93,Gross sales for payout period
+2026-09-29,JE-014,po_1014,Bank Clearing — Stripe Payouts,1978.41,,Stripe payout po_1014 to bank
+2026-09-29,JE-014,po_1014,Stripe Processing Fees,68.30,,Stripe processing fees
+2026-09-29,JE-014,po_1014,Refunds (Contra Revenue),215.30,,Customer refunds
+2026-09-29,JE-014,po_1014,Sales Revenue,,2262.01,Gross sales for payout period

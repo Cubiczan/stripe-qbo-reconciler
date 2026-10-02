@@ -1,0 +1,414 @@
+[
+  {
+    "txnDate": "2026-09-03",
+    "docNumber": "JE-001",
+    "journalEntryId": "po_1001",
+    "memo": "Stripe payout po_1001 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 3219.7,
+        "credit": 0,
+        "description": "Stripe payout po_1001 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 99.88,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 3319.58,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-05",
+    "docNumber": "JE-002",
+    "journalEntryId": "po_1002",
+    "memo": "Stripe payout po_1002 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1512.65,
+        "credit": 0,
+        "description": "Stripe payout po_1002 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 50.76,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 104.31,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 1667.72,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-07",
+    "docNumber": "JE-003",
+    "journalEntryId": "po_1003",
+    "memo": "Stripe payout po_1003 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 2189.7,
+        "credit": 0,
+        "description": "Stripe payout po_1003 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 69.13,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2258.83,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-09",
+    "docNumber": "JE-004",
+    "journalEntryId": "po_1004",
+    "memo": "Stripe payout po_1004 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 2041.89,
+        "credit": 0,
+        "description": "Stripe payout po_1004 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 64.08,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2105.97,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-11",
+    "docNumber": "JE-005",
+    "journalEntryId": "po_1005",
+    "memo": "Stripe payout po_1005 — EXCEPTION (chargeback): Contains a chargeback — review before booking",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 2281.91,
+        "credit": 0,
+        "description": "Stripe payout po_1005 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 93.79,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 107.56,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Chargebacks (Contra Revenue)",
+        "debit": 120,
+        "credit": 0,
+        "description": "Chargebacks"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2603.26,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-13",
+    "docNumber": "JE-006",
+    "journalEntryId": "po_1006",
+    "memo": "Stripe payout po_1006 — EXCEPTION (fee_mismatch): Payout is $12.34 less than gross − fees − refunds",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 3339.85,
+        "credit": 0,
+        "description": "Stripe payout po_1006 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 105.05,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 3457.24,
+        "description": "Gross sales for payout period"
+      },
+      {
+        "account": "Unreconciled Difference (Suspense)",
+        "debit": 12.34,
+        "credit": 0,
+        "description": "Payout short of computed net"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-15",
+    "docNumber": "JE-007",
+    "journalEntryId": "po_1007",
+    "memo": "Stripe payout po_1007 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 4553.9,
+        "credit": 0,
+        "description": "Stripe payout po_1007 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 140.95,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 4694.85,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-17",
+    "docNumber": "JE-008",
+    "journalEntryId": "po_1008",
+    "memo": "Stripe payout po_1008 — EXCEPTION (possible_duplicate): 8 charge(s) also appear in another payout — possible duplicate",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1936.86,
+        "credit": 0,
+        "description": "Stripe payout po_1008 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 62.08,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 59.21,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2058.15,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-19",
+    "docNumber": "JE-009",
+    "journalEntryId": "po_1009",
+    "memo": "Stripe payout po_1009 — EXCEPTION (possible_duplicate): 8 charge(s) also appear in another payout — possible duplicate",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1936.86,
+        "credit": 0,
+        "description": "Stripe payout po_1009 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 62.08,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 59.21,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2058.15,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-21",
+    "docNumber": "JE-010",
+    "journalEntryId": "po_1010",
+    "memo": "Stripe payout po_1010 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1520.62,
+        "credit": 0,
+        "description": "Stripe payout po_1010 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 47.27,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 1567.89,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-23",
+    "docNumber": "JE-011",
+    "journalEntryId": "po_1011",
+    "memo": "Stripe payout po_1011 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1131.05,
+        "credit": 0,
+        "description": "Stripe payout po_1011 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 45.14,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 318.39,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 1494.58,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-25",
+    "docNumber": "JE-012",
+    "journalEntryId": "po_1012",
+    "memo": "Stripe payout po_1012 — EXCEPTION (missing_deposit): No bank deposit of $3093.49 found within 3 days of payout",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 3093.49,
+        "credit": 0,
+        "description": "Stripe payout po_1012 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 96.72,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 3190.21,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-27",
+    "docNumber": "JE-013",
+    "journalEntryId": "po_1013",
+    "memo": "Stripe payout po_1013 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 2694.44,
+        "credit": 0,
+        "description": "Stripe payout po_1013 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 84.49,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2778.93,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  },
+  {
+    "txnDate": "2026-09-29",
+    "docNumber": "JE-014",
+    "journalEntryId": "po_1014",
+    "memo": "Stripe payout po_1014 — auto-reconciled",
+    "lines": [
+      {
+        "account": "Bank Clearing — Stripe Payouts",
+        "debit": 1978.41,
+        "credit": 0,
+        "description": "Stripe payout po_1014 to bank"
+      },
+      {
+        "account": "Stripe Processing Fees",
+        "debit": 68.3,
+        "credit": 0,
+        "description": "Stripe processing fees"
+      },
+      {
+        "account": "Refunds (Contra Revenue)",
+        "debit": 215.3,
+        "credit": 0,
+        "description": "Customer refunds"
+      },
+      {
+        "account": "Sales Revenue",
+        "debit": 0,
+        "credit": 2262.01,
+        "description": "Gross sales for payout period"
+      }
+    ]
+  }
+]
