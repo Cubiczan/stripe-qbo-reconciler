@@ -42,6 +42,57 @@ test("clean payout auto-matches and booking lines balance", async () => {
   assert.ok(accounts.some((a) => a.includes("Bank Clearing")));
 });
 
+// ---------- signed Stripe-style input ----------
+
+test("signed amounts (real Stripe convention) are normalized to magnitudes", () => {
+  const txns = [
+    { id: "t1", payoutId: "po_s", type: "charge", amount: 10000, fee: 320 },
+    { id: "t2", payoutId: "po_s", type: "refund", amount: -5000, fee: 0 },
+    { id: "t3", payoutId: "po_s", type: "chargeback", amount: -12000, fee: 1500 },
+  ];
+  const s = summarizeTransactions(txns);
+  assert.equal(s.gross, 10000);
+  assert.equal(s.refunds, 5000);
+  assert.equal(s.chargebacks, 12000);
+  assert.equal(s.fees, 320 + 1500);
+  assert.equal(s.computedNet, 10000 - 1820 - 5000 - 12000);
+});
+
+test("negative fee (fee return) cannot unbalance the journal", async () => {
+  // Counterexample from the Lean review: fees = -100 with mismatch 0 used
+  // to produce debits 10100 != credits 10000, because computedNet added the
+  // negative fee back while bookingLines dropped the non-positive fee line.
+  const payouts = [{ id: "po_n", date: "2026-09-05", amount: 9900, currency: "usd" }];
+  const transactions = [
+    { id: "t1", payoutId: "po_n", type: "charge", amount: 10000, fee: -100 },
+  ];
+  const deposits = [{ id: "d1", date: "2026-09-06", amount: 9900 }];
+  const { results } = await reconcile({ payouts, transactions, deposits });
+  assert.equal(results[0].fees, 100);
+  assert.equal(results[0].computedNet, 9900);
+  assert.equal(results[0].mismatchCents, 0);
+  const dr = results[0].lines.reduce((a, l) => a + l.debit, 0);
+  const cr = results[0].lines.reduce((a, l) => a + l.credit, 0);
+  assert.equal(dr, cr);
+});
+
+test("signed chargeback payout is flagged as an exception, never auto-matched", async () => {
+  const payouts = [{ id: "po_cb", date: "2026-09-05", amount: 8300, currency: "usd" }];
+  const transactions = [
+    { id: "t1", payoutId: "po_cb", type: "charge", amount: 20000, fee: 200 },
+    { id: "t2", payoutId: "po_cb", type: "chargeback", amount: -10000, fee: 1500 },
+  ];
+  const deposits = [{ id: "d1", date: "2026-09-06", amount: 8300 }];
+  const { results } = await reconcile({ payouts, transactions, deposits });
+  assert.equal(results[0].chargebacks, 10000);
+  assert.equal(results[0].computedNet, 8300);
+  assert.equal(results[0].status, "exception");
+  assert.equal(results[0].classification.category, "chargeback");
+  const dr = results[0].lines.reduce((a, l) => a + l.debit, 0);
+  const cr = results[0].lines.reduce((a, l) => a + l.credit, 0);
+  assert.equal(dr, cr);
+});
+
 // ---------- deposit matching ----------
 
 test("deposit matching: exact amount within the date window", async () => {

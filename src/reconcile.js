@@ -30,14 +30,21 @@ const dayDiff = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / DAY_MS);
 export function summarizeTransactions(txns) {
   const s = { gross: 0, fees: 0, refunds: 0, chargebacks: 0, chargebackFees: 0 };
   for (const t of txns) {
+    // Real Stripe balance transactions are SIGNED: refund and chargeback
+    // amounts are negative, and a fee can be negative when Stripe returns
+    // part of a fee. This engine's convention is positive magnitudes per
+    // bucket (computedNet subtracts the buckets; bookingLines keys off
+    // `> 0`), so normalize at ingestion. Without this, signed input breaks
+    // the net identity, unbalances the journal, and flips hasChargeback
+    // off — letting chargeback payouts silently classify as "matched".
     if (t.type === "charge") {
-      s.gross += t.amount;
-      s.fees += t.fee || 0;
+      s.gross += Math.abs(t.amount);
+      s.fees += Math.abs(t.fee || 0);
     } else if (t.type === "refund") {
-      s.refunds += t.amount;
+      s.refunds += Math.abs(t.amount);
     } else if (t.type === "chargeback") {
-      s.chargebacks += t.amount;
-      s.chargebackFees += t.fee || 0;
+      s.chargebacks += Math.abs(t.amount);
+      s.chargebackFees += Math.abs(t.fee || 0);
     }
   }
   s.fees += s.chargebackFees;
