@@ -18,6 +18,16 @@ reconciliation that splits every payout, proves it against the bank, and
 exports journal entries QuickBooks can import — booking humans only for the
 exceptions that actually need judgment.
 
+<!-- product-screenshots:start -->
+## Product screenshots
+
+Read-only reconciliation demo interface; the demo button was not run.
+
+![stripe-qbo-reconciler interface](docs/screenshots/product-overview.png)
+
+Captured locally and non-interactively from [source commit 403f1ca711c5](https://github.com/icohangar-ops/stripe-qbo-reconciler/tree/403f1ca711c5d456dd3cf2da7b26bf5a54d9aaa6); read-only reconciliation demo interface; the demo button was not run.
+<!-- product-screenshots:end -->
+
 ## Pipeline
 
 ```
